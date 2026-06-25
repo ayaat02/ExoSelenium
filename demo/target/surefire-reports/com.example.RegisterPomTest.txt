@@ -1,4 +1,37 @@
 -------------------------------------------------------------------------------
 Test set: com.example.RegisterPomTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.77 s -- in com.example.RegisterPomTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 24.63 s <<< FAILURE! -- in com.example.RegisterPomTest
+com.example.RegisterPomTest.Register -- Time elapsed: 24.44 s <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+Element <input class="button-1 confirm-order-next-step-button" type="button"> could not be scrolled into view
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.19'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [333787c4-7227-47f7-9b76-81dbe9dac161, clickElement {id=3ab6dc71-d1c1-403f-b62f-3af4fed7ffd9}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 152.0.2, moz:accessibilityChecks: false, moz:buildID: 20260621191700, moz:geckodriverVersion: 0.37.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15508, moz:profile: C:\Users\islem\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Element: [[FirefoxDriver: firefox on windows (333787c4-7227-47f7-9b76-81dbe9dac161)] -> css selector: [onclick='ConfirmOrder.save()']]
+Session ID: 333787c4-7227-47f7-9b76-81dbe9dac161
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at com.example.pom.CheckoutPom.ClickConfOrderBtn(CheckoutPom.java:119)
+	at com.example.RegisterPomTest.Register(RegisterPomTest.java:124)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+

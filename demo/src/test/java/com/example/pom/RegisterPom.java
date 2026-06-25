@@ -57,4 +57,13 @@ public class RegisterPom {
     public void ClickRegister(){
         driver.findElement(regiBtn).click();;
     }
+    public void RegisterUser(String g,String fn,String ln ,String e, String p){
+        ChoixGenre(g);
+        FirstName(fn);
+        LasttName(ln);
+        Email(e);
+        Password(p);
+        ConfirmPassword(p);
+        ClickRegister();
+    }
 }
